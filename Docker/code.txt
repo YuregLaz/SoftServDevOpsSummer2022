@@ -1,0 +1,9 @@
+Yuriy.Lazorenko@CO-IT02-NB MINGW64 /c/1Download/SoftServDevOpsSummer2022/5.Docker
+$ docker run -d --name nginx-container -e TZ=UTC -p 8080:80 ubuntu/nginx:1.18-22.04_beta
+a82b0f4cd825145fabb10fb22dc48f044bb7f35314c69c4ae05d82f8685718be
+
+Yuriy.Lazorenko@CO-IT02-NB MINGW64 /c/1Download/SoftServDevOpsSummer2022/5.Docker
+$ docker cp ./html/index.html nginx-container:/var/www/html
+
+Yuriy.Lazorenko@CO-IT02-NB MINGW64 /c/1Download/SoftServDevOpsSummer2022/5.Docker
+$ docker exec nginx-container nginx -s reload
