@@ -1,0 +1,10 @@
+1. download and install go
+2. Download Terraform and extract in new folder (tf) on disc C
+3. download provider VBox zip from https://github.com/shekeriev/terraform-provider-virtualbox and extract to terraform
+4. in folder with provider in bush type "go build"
+5. compiled file (terraform-provider-virtualbox) move to folder "tf"
+6. Create main.tf and write  required_providers, resource "virtualbox_vm" "node"
+7. Init terradorm with command "./terraform init"
+8. "./terraform plan"
+9. terraform apply -parallelism=1
+10. terraform destroy
